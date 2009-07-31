@@ -5,7 +5,7 @@ Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
 License:        GPLv2+
-URL:            http://sourceforge.net/projects/libass
+URL:            http://code.google.com/p/libass/
 Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -65,6 +65,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Martin Sourada <mso@fedoraproject.org>
+- Upstream changed from sourceforge to code.google
+
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9.6-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
 
