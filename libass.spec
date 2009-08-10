@@ -1,6 +1,6 @@
 Name:           libass
-Version:        0.9.6
-Release:        3%{?dist}
+Version:        0.9.7
+Release:        1%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
@@ -31,7 +31,6 @@ developing applications that use %{name}.
 
 %prep
 %setup -q
-
 
 %build
 %configure --disable-static
@@ -65,7 +64,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
-* Martin Sourada <mso@fedoraproject.org>
+* Mon Aug 10 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.7-1
+- New upstream release
 - Upstream changed from sourceforge to code.google
 
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9.6-3
