@@ -1,5 +1,5 @@
 Name:           libass
-Version:        0.9.7
+Version:        0.9.8
 Release:        1%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
@@ -64,6 +64,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Sun Oct 25 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.8-1
+- New upstream release
+- See http://repo.or.cz/w/libass.git?a=blob;f=Changelog for changes
+
 * Mon Aug 10 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.7-1
 - New upstream release
 - Upstream changed from sourceforge to code.google
