@@ -1,12 +1,12 @@
 Name:           libass
-Version:        0.9.7
-Release:        1%{?dist}
+Version:        0.9.8
+Release:        2%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
 License:        GPLv2+
 URL:            http://code.google.com/p/libass/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:        http://libass.googlecode.com/files/%{name}-%{version}.tar.bz2
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -64,6 +64,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Sun Jan 10 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.8-2
+- Fix source URL
+
+* Sun Oct 25 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.8-1
+- New upstream release
+- See http://repo.or.cz/w/libass.git?a=blob;f=Changelog for changes
+
 * Mon Aug 10 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.7-1
 - New upstream release
 - Upstream changed from sourceforge to code.google
