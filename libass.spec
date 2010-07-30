@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
-* Sun Jan 10 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.8-2
+* Sun Jan 10 2010 Martin Sourada <mso@fedoraproject.org> - 0.9.8-2
 - Fix source URL
 
 * Sun Oct 25 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.8-1
