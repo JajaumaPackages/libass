@@ -1,6 +1,6 @@
 Name:           libass
-Version:        0.9.8
-Release:        2%{?dist}
+Version:        0.9.9
+Release:        1%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
@@ -64,6 +64,16 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Fri Jul 30 2010 Martin Sourada <mso@fedoraproject.org> - 0.9.9-1
+- Fixes rhbz #618733
+- New upstream release
+  - Parse numbers in a locale-independent way
+  - Disable script file size limit
+  - Match fonts against the full name ("name for humans")
+  - Reset clip mode after \iclip
+  - Improve VSFilter compatibility
+  - A couple of smaller fixes and cleanups
+
 * Sun Jan 10 2010 Martin Sourada <mso@fedoraproject.org> - 0.9.8-2
 - Fix source URL
 
