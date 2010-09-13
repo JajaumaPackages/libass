@@ -1,5 +1,5 @@
 Name:           libass
-Version:        0.9.9
+Version:        0.9.11
 Release:        1%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
@@ -64,6 +64,17 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Mon Sep 13 2010 Martin Sourada <mso@fedoraproject.org> - 0.9.11-1
+- Fixes rhbz #630432
+- New upstream release
+  - Various fixes
+  - Performance improvements
+  - Calculate drawing bounding box like VSFilter
+  - Better PAR correction if text transforms are used
+  - Improved fullname font matching
+  - Add ass_flush_events API function
+  - Basic support for @font vertical text layout
+
 * Fri Jul 30 2010 Martin Sourada <mso@fedoraproject.org> - 0.9.9-1
 - Fixes rhbz #618733
 - New upstream release
