@@ -1,6 +1,6 @@
 Name:           libass
 Version:        0.9.11
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
@@ -64,6 +64,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Wed Sep 29 2010 jkeating - 0.9.11-2
+- Rebuilt for gcc bug 634757
+
 * Mon Sep 13 2010 Martin Sourada <mso@fedoraproject.org> - 0.9.11-1
 - Fixes rhbz #630432
 - New upstream release
