@@ -1,12 +1,12 @@
 Name:           libass
-Version:        0.9.11
-Release:        3%{?dist}
+Version:        0.9.12
+Release:        1%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
-License:        GPLv2+
+License:        ISC
 URL:            http://code.google.com/p/libass/
-Source0:        http://libass.googlecode.com/files/%{name}-%{version}.tar.bz2
+Source0:        http://libass.googlecode.com/files/%{name}-%{version}.tar.xz
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -64,6 +64,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Tue May 31 2011 Martin Sourada <mso@fedoraproject.org> - 0.9.12-1
+- New upstrea release
+  - Licence changed to ISC
+  - Fixed word-wrapping
+  - Improved charmap fallback matching
+  - Various other improvements and fixes
+
 * Mon Feb 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9.11-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
 
