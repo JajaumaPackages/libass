@@ -1,5 +1,5 @@
 Name:           libass
-Version:        0.9.12
+Version:        0.10.0
 Release:        1%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
@@ -13,6 +13,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  libpng-devel
 BuildRequires:  enca-devel
 BuildRequires:  fontconfig-devel
+BuildRequires:  fribidi-devel
 
 
 %description
@@ -64,8 +65,15 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Wed Nov 11 2011 Martin Sourada <mso@fedoraproject.org> - 0.10.0-1
+- New upstream release
+  - various improvements and fixes
+- BuildRequires: fribidi-devel (bidirectional text suport)
+- Fixes some wierd memory allocation related crash with freetype 2.4.6
+  - rhbz 753017, rhbz 753065
+
 * Tue May 31 2011 Martin Sourada <mso@fedoraproject.org> - 0.9.12-1
-- New upstrea release
+- New upstream release
   - Licence changed to ISC
   - Fixed word-wrapping
   - Improved charmap fallback matching
