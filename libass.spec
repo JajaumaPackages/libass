@@ -1,6 +1,6 @@
 Name:           libass
 Version:        0.10.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
@@ -15,10 +15,10 @@ BuildRequires:  enca-devel
 BuildRequires:  fontconfig-devel
 BuildRequires:  fribidi-devel
 %if 0%{?fedora} >= 18
-# The oldest required version harfbuzz-ng 0.7.0, fedora 17 and bellow have
+# The oldest required version harfbuzz-ng 0.9.5, fedora 17 and bellow have
 # harfbuff 0.6.x.
 # For advanced opentype shaping.
-BuildRequires:  harfbuzz-devel >= 0.7.0
+BuildRequires:  harfbuzz-devel >= 0.9.5
 %endif
 
 
@@ -71,6 +71,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Wed Oct 17 2012 Martin Sourada <mso@fedoraproject.org> - 0.10.1-2
+- Fix a mistake in minimal required version of harfbuzz
+
 * Wed Oct 17 2012 Martin Sourada <mso@fedoraproject.org> - 0.10.1-1
 - New upstream release
   - various improvements and fixes
