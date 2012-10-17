@@ -18,7 +18,7 @@ BuildRequires:  fribidi-devel
 # The oldest required version harfbuzz-ng 0.7.0, fedora 17 and bellow have
 # harfbuff 0.6.x.
 # For advanced opentype shaping.
-BuildRequires:  hrafbuzz-devel >= 0.7.0
+BuildRequires:  harfbuzz-devel >= 0.7.0
 %endif
 
 
