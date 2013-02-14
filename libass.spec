@@ -1,6 +1,6 @@
 Name:           libass
 Version:        0.10.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
@@ -71,6 +71,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
 * Wed Oct 17 2012 Martin Sourada <mso@fedoraproject.org> - 0.10.1-2
 - Fix a mistake in minimal required version of harfbuzz
 
