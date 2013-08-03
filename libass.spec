@@ -1,6 +1,6 @@
 Name:           libass
 Version:        0.10.1
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
@@ -71,6 +71,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.1-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
