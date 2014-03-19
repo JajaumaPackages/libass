@@ -1,6 +1,6 @@
 Name:           libass
-Version:        0.10.1
-Release:        4%{?dist}
+Version:        0.10.2
+Release:        1%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
@@ -8,19 +8,11 @@ License:        ISC
 URL:            http://code.google.com/p/libass/
 Source0:        http://libass.googlecode.com/files/%{name}-%{version}.tar.xz
 
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-
-BuildRequires:  libpng-devel
 BuildRequires:  enca-devel
 BuildRequires:  fontconfig-devel
 BuildRequires:  fribidi-devel
-%if 0%{?fedora} >= 18
-# The oldest required version harfbuzz-ng 0.9.5, fedora 17 and bellow have
-# harfbuff 0.6.x.
-# For advanced opentype shaping.
 BuildRequires:  harfbuzz-devel >= 0.9.5
-%endif
-
+BuildRequires:  libpng-devel
 
 %description
 Libass is a portable library for SSA/ASS subtitles rendering.
@@ -45,13 +37,12 @@ make %{?_smp_mflags}
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 
 
-%clean
-rm -rf $RPM_BUILD_ROOT
+%check
+make check
 
 
 %post -p /sbin/ldconfig
@@ -60,17 +51,19 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %files
-%defattr(-,root,root,-)
 %doc Changelog COPYING
 %{_libdir}/*.so.*
 
 %files devel
-%defattr(-,root,root,-)
 %{_includedir}/*
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Wed Mar 19 2014 Peter Robinson <pbrobinson@fedoraproject.org> 0.10.2-1
+- Update to 0.10.2
+- Run make check
+
 * Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.1-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
 
