@@ -88,7 +88,7 @@ make check
 * Fri Jan 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.0-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
 
-* Wed Nov 11 2011 Martin Sourada <mso@fedoraproject.org> - 0.10.0-1
+* Fri Nov 11 2011 Martin Sourada <mso@fedoraproject.org> - 0.10.0-1
 - New upstream release
   - various improvements and fixes
 - BuildRequires: fribidi-devel (bidirectional text suport)
@@ -143,14 +143,14 @@ make check
 * Fri Jul 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9.6-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
 
-* Tue Mar 24 2008 Martin Sourada <mso@fedoraproject.org> - 0.9.6-2
+* Tue Mar 24 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.6-2
 - remove glibc-devel and freetype-devel BRs, they're already pulled in by the
   rest
 
-* Sun Mar 22 2008 Martin Sourada <mso@fedoraproject.org> - 0.9.6-1
+* Sun Mar 22 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.6-1
 - update to newever version
 - drop %%doc from -devel
 - update source url to conform with fedora packaging guidelines
 
-* Sun Mar 22 2008 Martin Sourada <mso@fedoraproject.org> - 0.9.5-1
+* Sun Mar 22 2009 Martin Sourada <mso@fedoraproject.org> - 0.9.5-1
 - Initial rpm package
