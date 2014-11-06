@@ -1,12 +1,12 @@
 Name:           libass
-Version:        0.10.2
-Release:        3%{?dist}
+Version:        0.12.0
+Release:        1%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
 License:        ISC
-URL:            http://code.google.com/p/libass/
-Source0:        http://libass.googlecode.com/files/%{name}-%{version}.tar.xz
+URL:            https://github.com/libass
+Source0:        https://github.com/libass/libass/releases/download/%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:  enca-devel
 BuildRequires:  fontconfig-devel
@@ -60,6 +60,10 @@ make check
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Thu Nov 06 2014 Martin Sourada <mso@fedoraproject.org> - 0.12.0-1
+- Codebase moved from google code to github.
+- Update to 0.12.0
+
 * Sun Aug 17 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.2-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
 
