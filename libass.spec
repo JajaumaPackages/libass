@@ -1,6 +1,6 @@
 Name:           libass
-Version:        0.13.1
-Release:        2%{?dist}
+Version:        0.13.3
+Release:        1%{?dist}
 Summary:        Portable library for SSA/ASS subtitles rendering
 
 Group:          System Environment/Libraries
