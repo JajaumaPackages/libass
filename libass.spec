@@ -60,10 +60,13 @@ make check
 %{_libdir}/pkgconfig/libass.pc
 
 %changelog
+* Tue Sep 27 2016 Martin Sourada <mso@fedoraproject.org> - 0.13.3-1
+- Update to 0.13.3
+
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0.13.1-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 
-* Thu Dec 17 2015 Martin Sourada <mso@fedoraprojec.org> - 0.13.1-1
+* Thu Dec 17 2015 Martin Sourada <mso@fedoraproject.org> - 0.13.1-1
 - Update to 0.13.1
 
 * Wed Jun 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.12.1-2
